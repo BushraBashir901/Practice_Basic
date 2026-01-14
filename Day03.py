@@ -47,11 +47,14 @@ print(st.replace('Here','there')) # replace with new word
 st1='He She It'
 v=st1.split(' ') #spilting method
 print(v)
-
 jo=' '.join(st1)
 print(jo)
-# re=v.replace(' ','_')
-# print(re)
+#You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
+def split_and_join(line):
+    # write your code here
+    a=line.split(" ") #convert string into list like line=['this','is','code']
+    b="-".join(a) #convert list into string by joining hyphen
+    return b
 
 nested=[1,2,3,True] #Nested list
 sec=['a','b','f',nested,[2,3,4,5,6]]
@@ -128,6 +131,7 @@ def list_num(list): #Need to set out
             print(list_num)
 list=[1,2,3,4]   
 print(list_num(list))
+
 
 
 
